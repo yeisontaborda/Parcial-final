@@ -1,0 +1,47 @@
+<h2>Crear curso</h2>
+
+<div class="row">
+
+    <div class="col-6 d-flex justify-content-end">
+        <label for="tbNombreCurso">
+            Nombre del curso
+        </label>
+    </div>
+
+    <div class="col-6">
+        <input type="text" id="tbNombreCurso"
+        [(ngModel)]="nombreCurso">
+    </div>
+
+
+    <div class="col-6 d-flex justify-content-end">
+        <label for="tbDuracionCurso">
+            Duración del curso en horas
+        </label>
+    </div>
+
+    <div class="col-6">
+        <input type="number" id="tbDuracionCurso"
+        [(ngModel)]="duracionCurso">
+    </div>
+
+
+    <div class="col-6 d-flex justify-content-end">
+        <label for="tbPrecioCurso">
+            Precio del curso
+        </label>
+    </div>
+
+    <div class="col-6">
+        <input type="number" id="tbPrecioCurso"
+        [(ngModel)]="precioCurso">
+    </div>
+
+    <div class="col-12 d-flex justify-content-center">
+        <button class="btn btn-primary"
+            (click) = "createCourse()">
+            Crear curso
+        </button>
+    </div>
+
+</div>

@@ -1,0 +1,22 @@
+<div class="row">
+    <div class="col-6 d-flex justify-content-end">
+        <label for="tbUsername">Email</label>
+    </div>
+    <div class="col-6">
+        <input type="email" id="tbUsername" 
+            [(ngModel)]="username" >
+    </div>
+
+    <div class="col-6 d-flex justify-content-end">
+        <label for="tbPassword">Contraseña</label>
+    </div>
+    <div class="col-6">
+        <input type="password" id="tbPassword" 
+            [(ngModel)]="password" >
+    </div>
+
+    <div class="col-12 d-flex justify-content-center">
+        <button class="btn btn-primary"
+        (click)="validateUserCredentials()">Iniciar Sesión</button>
+    </div>
+</div>

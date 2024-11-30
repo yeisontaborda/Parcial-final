@@ -1,0 +1,21 @@
+<h2> Lista de Cursos </h2>
+
+<table>
+    <tr>
+        <td><b>Nombre</b></td>
+        <td><b>Duracion</b></td>
+        <td><b>Precio</b></td>
+    </tr>
+
+    <tr *ngFor="let curso of 
+                listaCursos.cursosEncontrados">
+
+        <td>{{curso.nombre}}</td>
+        <td>{{curso.duracionHoras}}</td>
+        <td>{{curso.precio}} 
+            <span *ngIf="curso.precio <= 200000">
+            <b>¡Oferta!</b>
+        </span></td>
+
+    </tr>
+</table>
